@@ -15,7 +15,7 @@ cap = cv2.VideoCapture(0)
 while cap.isOpened():
     ret, frame = cap.read()
 
-    cv2.imshow('CV@Frame', frame)
+    cv2.imshow('CV2Frame', frame)
 
     img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     imgbatch = transform(img).to('cpu')
